@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 70px;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#1565C0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#1565C0;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    font-size:18px;
+    color:#666;
+    line-height:32px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#1565C0;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#0D47A1;
+}
+
+.hero-right{
+    width:45%;
+}
+
+.hero-right img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+footer{
+    margin-top:60px;
+    text-align:center;
+    background:#1565C0;
+    color:white;
+    padding:20px;
+}
+
+/* DETECTION */
+
+.detect-container{
+    width:80%;
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.detect-container h1{
+    margin-bottom:10px;
+}
+
+.detect-container p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+#imageUpload{
+    margin:20px 0;
+}
+
+#preview{
+    max-width:350px;
+    border-radius:15px;
+    display:none;
+    margin:20px auto;
+}
+
+#result{
+    margin-top:25px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.detect-container{
+
+width:700px;
+
+margin:60px auto;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+text-align:center;
+
+}
+
+#preview{
+
+max-width:350px;
+
+margin-top:20px;
+
+display:none;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+#result{
+
+margin-top:30px;
+
+font-size:22px;
+
+font-weight:bold;
+
+}

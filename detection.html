@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detection</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://unpkg.com/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+<script>
+console.log("TensorFlow =", typeof tf);
+console.log("tmImage =", typeof tmImage);
+</script>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+
+👟 ShoeVision AI
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="detection.html">Detection</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="detect-container">
+
+<h1>Deteksi Jenis Sepatu</h1>
+
+<p>Upload gambar Sneakers atau Flat Shoes.</p>
+
+<input
+type="file"
+id="imageUpload"
+accept="image/*">
+
+<br><br>
+
+<img id="preview">
+
+<br><br>
+
+<button class="btn" onclick="predict()">
+
+Deteksi Sekarang
+
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+console.log("tmImage =", window.tmImage);
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
