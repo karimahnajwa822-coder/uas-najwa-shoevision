@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Detection</title>
-
+<title>Detection — ShoeVision AI</title>
 <link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-<script src="https://unpkg.com/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-
-<script>
-console.log("TensorFlow =", typeof tf);
-console.log("tmImage =", typeof tmImage);
-</script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-
-<div class="logo">
-
-👟 ShoeVision AI
-
-</div>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="detection.html">Detection</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
+  <a class="brand" href="index.html">
+    <span class="brand-mark">SV</span>
+    <span class="brand-word">ShoeVision<span class="brand-ai">AI</span></span>
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="detection.html" class="active">Detection</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
-<div class="detect-container">
+<div class="detect-wrap">
+  <div class="detect-intro">
+    <span class="eyebrow">Langkah 1 — Unggah Foto</span>
+    <h1 style="font-family:'Anton',sans-serif;font-size:clamp(30px,4.5vw,42px);text-transform:uppercase;line-height:1.05;">Mulai Deteksi</h1>
+  </div>
 
-<h1>Deteksi Jenis Sepatu</h1>
+  <div class="detect-card">
+    <label class="upload-zone" for="imageUpload">
+      <span class="upload-icon">⬆</span>
+      <span class="upload-text">Klik untuk pilih foto sepatu</span>
+      <span class="upload-hint">JPG atau PNG</span>
+    </label>
+    <input type="file" id="imageUpload" accept="image/*" hidden>
 
-<p>Upload gambar Sneakers atau Flat Shoes.</p>
+    <img id="preview" src="" alt="Preview sepatu">
 
-<input
-type="file"
-id="imageUpload"
-accept="image/*">
+    <div>
+      <button class="btn" onclick="predict()">Deteksi Sekarang <span>→</span></button>
+    </div>
 
-<br><br>
-
-<img id="preview">
-
-<br><br>
-
-<button class="btn" onclick="predict()">
-
-Deteksi Sekarang
-
-</button>
-
-<div id="result"></div>
-
+    <div id="result"></div>
+  </div>
 </div>
 
-<script>
-console.log("tmImage =", window.tmImage);
-</script>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">ShoeVision AI</div>
+      <p class="footer-note">Proyek klasifikasi jenis sepatu berbasis Artificial Intelligence, dibangun dengan Google Teachable Machine.</p>
+    </div>
+    <div class="footer-note">Home · About · Detection · Contact</div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright © 2026 ShoeVision AI</span>
+    <span>Built with Teachable Machine</span>
+  </div>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>

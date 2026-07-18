@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoeVision AI</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShoeVision AI — Deteksi Jenis Sepatu dengan AI</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-
-<div class="logo">
-
-👟 ShoeVision AI
-
-</div>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="detection.html">Detection</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
+  <a class="brand" href="index.html">
+    <span class="brand-mark">SV</span>
+    <span class="brand-word">ShoeVision<span class="brand-ai">AI</span></span>
+  </a>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="detection.html">Detection</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
 <section class="hero">
+  <div class="hero-left">
+    <span class="eyebrow">AI Shoe Classifier</span>
+    <h1>Deteksi Jenis <span class="hl">Sepatu</span> Menggunakan AI</h1>
+    <p>Unggah satu foto, dan model AI akan mengenali apakah itu Sneakers atau Flat Shoes — dilatih menggunakan Google Teachable Machine.</p>
+    <a href="detection.html">
+      <button class="btn">Mulai Deteksi <span>→</span></button>
+    </a>
+    <div class="chip-row">
+      <span class="chip">Teachable Machine</span>
+      <span class="chip">2 Kategori</span>
+      <span class="chip">Prediksi Real-time</span>
+    </div>
+  </div>
 
-<div class="hero-left">
-
-<h1>
-
-Deteksi Jenis Sepatu Menggunakan AI
-
-</h1>
-
-<p>
-
-Website berbasis Artificial Intelligence menggunakan Google Teachable Machine untuk mengenali Sneakers dan Flat Shoes.
-
-</p>
-
-<a href="detection.html">
-
-<button class="btn">
-
-Mulai Deteksi
-
-</button>
-
-</a>
-
-</div>
-
-<div class="hero-right">
-
-
-</div>
-
+  <div class="hero-right">
+    <div class="tag-card">
+      <div class="tag-hole"></div>
+      <div class="tag-eyebrow">AI Verification Tag</div>
+      <div class="tag-divider"></div>
+      <ul class="tag-classes">
+        <li><span class="tag-dot"></span>Sneakers</li>
+        <li><span class="tag-dot"></span>Flat Shoes</li>
+      </ul>
+      <div class="tag-barcode"></div>
+      <div class="tag-serial">TM-MODEL // BATCH 2026</div>
+      <div class="stamp">AI<br>Verified</div>
+    </div>
+  </div>
 </section>
 
 <footer>
-
-Copyright © 2026 ShoeVision AI
-
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">ShoeVision AI</div>
+      <p class="footer-note">Proyek klasifikasi jenis sepatu berbasis Artificial Intelligence, dibangun dengan Google Teachable Machine.</p>
+    </div>
+    <div class="footer-note">
+      Home · About · Detection · Contact
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright © 2026 ShoeVision AI</span>
+    <span>Built with Teachable Machine</span>
+  </div>
 </footer>
 
 </body>
