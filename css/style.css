@@ -412,7 +412,7 @@ color:#8A63FF;
 
     display:flex;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
     gap:12px;
 
